@@ -1,0 +1,89 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Poppins:wght@300;400&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+.conteiner{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.conteiner form{
+    width: 50%;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0 grey;
+}
+.formRow{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    align-items: center;
+    margin-bottom:20px ;
+}
+.formInput{
+    padding: 4px 10px;
+    border-radius: 5px;
+    border: 1px solid grey;
+    flex: 2;
+    caret-color: aqua;
+}
+.formlabel{
+    flex: 1;
+}
+
+.formInput:focus{
+    outline: none;
+    border: 1px solid aqua;
+}
+
+.formBtnConteiner{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+button{
+    width: 35%;
+    padding: 8px;
+    border: none;
+    background-color: rgb(71, 126, 215);
+    color: #fff;
+
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 2px solid rgb(71, 126, 215);
+
+}
+button:hover{
+    background-color: #fff;
+    color: rgb(71, 126, 215);
+}
+#sifre{
+    position: relative;
+}
+#eye{
+    position: absolute;
+    right: 450px;
+    cursor: pointer;
+    color: rgb(71, 126, 215);
+}
+.errorMessage{
+    font-size: 10px;
+    margin-top: 5px;
+    color: crimson;
+    visibility: hidden;
+    
+}
